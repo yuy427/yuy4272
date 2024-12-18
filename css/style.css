@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+/*------------------------------------------
+headerの設定
+-------------------------------------------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px;
+    background-color: #ECEFF4;
+}
+
+h1{
+    font-style: italic;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.login{
+    color: white;
+    background-color: #4C566A;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.login:hover{
+    opacity: 0.5;
+}
+
+/*------------------------------------------
+mainの設定
+-------------------------------------------*/
+/*------------------------------------------
+oneの設定
+-------------------------------------------*/
+
+.one{
+    height: 110vh;
+    margin-bottom: 20px;
+}
+
+.one_contents{
+    padding: 0 20px;
+}
+
+.PC_img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.one_title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.one_list li{
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.one_list li:last-child{
+    margin-bottom: 20px;
+}
+
+.one_list li::before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 8px;
+    border-left: 3px solid #7391B7;
+    border-bottom: 3px solid #7391B7;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.registration{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #4C566A;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.registration::after{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    content: "→";
+    display: block;
+    width: 10px;
+    height: 10px;
+    color: white;
+    font-weight: bold;
+    transform: translate(-50%,-50%);
+}
+
+.registration:hover{
+    opacity: 0.5;
+}
+
+/*------------------------------------------
+twoの設定
+-------------------------------------------*/
+
+.two{
+    height: 102vh;
+}
+
+.two_contents{
+    padding: 0 20px;
+}
+
+.two_title{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.two_img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.two_min_title{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.two_min_contents{
+    text-align: center;
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+/*------------------------------------------
+threeの設定
+-------------------------------------------*/
+
+.three{
+    color: white;
+    height: 200vh;
+}
+
+.three_contents{
+    padding: 20px;
+}
+
+.three_title{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.doc_img{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.doc_title{
+    margin-bottom: 15px;
+}
+
+.doc_contents{
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/*------------------------------------------
+footerの設定
+-------------------------------------------*/
+
+footer{
+    text-align: center;
+}
+
+.footer_list li{
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.copy{
+    margin-top: 20px;
+    color: gray;
+}
+
+/*------------------------------------------
+PCサイズの設定
+-------------------------------------------*/
+
+@media screen and (min-width:900px) {
+    /*------------------------------------------
+    headerの設定
+    -------------------------------------------*/
+    header{
+        padding: 40px;
+    }
+    /*------------------------------------------
+    mainの設定
+    -------------------------------------------*/
+    /*------------------------------------------
+    oneの設定
+    -------------------------------------------*/
+
+    .one{
+        height: 85vh;
+    }
+
+    .one_contents{
+        padding: 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .one_text{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .PC_img{
+        width: 80%;
+    }
+
+    .PC_img_wrapper{
+        width: 50%;
+    }
+
+    /*------------------------------------------
+    twoの設定
+    -------------------------------------------*/
+
+    .two{
+        height: 60vh;
+    }
+
+    .two_contents{
+        padding: 40px;
+    }
+
+    .two_text{
+        display: flex;
+    }
+
+    .two_title{
+        margin-bottom: 40px;
+    }
+
+    .two_list{
+        width: 33%;
+    }
+
+    /*------------------------------------------
+    threeの設定
+    -------------------------------------------*/
+    
+    .three{
+        height: 200vh;
+    }
+
+    .three_contents{
+        padding: 40px;
+    }
+
+    .three_text_wrapper{
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .three_text{
+        margin-left: 20px;
+    }
+
+    .kyouyu_wrapper{
+        flex-direction: row-reverse;
+    }
+
+    .kyouyu_wrapper .three_text{
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .doc_img_wrapper{
+        width: 75%;
+    }
+
+    /*------------------------------------------
+    footerの設定
+    -------------------------------------------*/
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    .footer_list{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_list li{
+        position: relative;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .footer_list li::after{
+        content: "/";
+        position: absolute;
+        top: 50%;
+        right: -15px;
+        transform: translate(-50%,-50%);
+    }
+
+    .footer_list li:last-child{
+        margin-right: 0
+    }
+
+    .footer_list li:last-child::after{
+        content: "";
+    }
+
+    .copy{
+        margin-top: 0;
+    }
+}

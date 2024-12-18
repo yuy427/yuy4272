@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+.container {
+    position: relative;
+    background: #ECEFF4;
+    height: 90vh;
+  }
+  
+  .wave {
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background: #ECEFF4;
+    bottom: -70px;
+  }
+  
+  .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+  }
+  
+  .wave::before {
+    width: 55%;
+    height: 109%;
+    background-color: #fff;
+    right: -1.5%;
+    top: 60%;
+  }
+  .wave::after {
+    width: 55%;
+    height: 100%;
+    background-color: #ECEFF4;
+    left: -1.5%;
+    top: 40%;
+  }
+
+/*-----------------------------------------*/
+
+  .container2 {
+    position: relative;
+    background: white;
+    height: 92vh;
+  }
+  
+  .wave2 {
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background: white;
+    bottom: -70px;
+    /* border: solid 1px black; */
+  }
+  
+  .wave2::before, .wave2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    z-index: 1;
+  }
+  
+  .wave2::before {
+    width: 55%;
+    height: 109%;
+    background-color: #2D3440;
+    right: -3.5%;
+    top: 50%;
+  }
+  .wave2::after {
+    width: 55%;
+    height: 100%;
+    background-color: white;
+    left: -1.5%;
+    top: 40%;
+    /* border: solid 1px black; */
+  }
+
+  /*-----------------------------------------*/
+
+  .container3 {
+    position: relative;
+    background: #2D3440;
+    height: 165vh;
+    padding-top: 60px;
+  }
+  
+  .wave3 {
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background: #2D3440;
+    bottom: -70px;
+    /* border: solid 1px black; */
+  }
+  
+  .wave3::before, .wave3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+  }
+  
+  .wave3::before {
+    width: 55%;
+    height: 109%;
+    background-color: white;
+    right: -1.5%;
+    top: 60%;
+  }
+  .wave3::after {
+    width: 55%;
+    height: 100%;
+    background-color: #2D3440;
+    left: -1.5%;
+    top: 40%;
+    /* border: solid 1px black; */
+  }
+
+   /*-----------------------------------------*/
+
+   @media screen and (min-width:900px) {
+    .container{
+      height: 60vh;
+    }
+
+    /*-----------------------------------------*/
+    .container2{
+      height: 50vh;
+    }
+
+    /*-----------------------------------------*/
+    .container3{
+      height: 170vh;
+    }
+
+   }
